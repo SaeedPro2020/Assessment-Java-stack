@@ -1,48 +1,34 @@
 package com.example.utility;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import java.math.BigDecimal;
 
 public class Container {
-
-    @JsonProperty("uuid")
     private String uuid;
-
-    @JsonProperty("dateTime")
     private String dateTime;
-
-    @JsonProperty("num1")
     private BigDecimal num1;
-
-    @JsonProperty("num2")
     private BigDecimal num2;
-
-    @JsonProperty("roundedResult")
     private BigDecimal roundedResult;
-
-    @JsonProperty("calculationResult")
     private String calculationResult;
-
-    @JsonProperty("md5Hash")
     private String md5Hash;
 
-    // Constructor
-    public Container() {
-        this.uuid = UUIDGenerator.generateUUID();
-        this.dateTime = DateTimeGenerator.generateCurrentDateTime();
-        this.num1 = generateRandomDecimal();
-        this.num2 = generateRandomDecimal();
-        BigDecimal result = DivisionCalculator.calculateDivision(num1, num2);
-        this.roundedResult = ResultRounder.roundResult(result);
-        this.calculationResult = CalculationResultGenerator.generateCalculationResult(num1, result, roundedResult);
-        this.md5Hash = MD5HashGenerator.generateMD5Hash(uuid + dateTime + roundedResult);
+    public Container(String uuid, String dateTime, BigDecimal num1, BigDecimal num2, BigDecimal roundedResult, String calculationResult, String md5Hash) {
+        this.uuid = uuid;
+        this.dateTime = dateTime;
+        this.num1 = num1;
+        this.num2 = num2;
+        this.roundedResult = roundedResult;
+        this.calculationResult = calculationResult;
+        this.md5Hash = md5Hash;
     }
 
-    // Generate a random decimal number between 1 and 100 with a scale of 4
-    @SuppressWarnings("deprecation")
-    private BigDecimal generateRandomDecimal() {
-        return BigDecimal.valueOf(1 + (100 - 1) * Math.random()).setScale(4, BigDecimal.ROUND_HALF_UP);
-    }
+    // Getters for all fields (required for Jackson serialization)
+    public String getUuid() { return uuid; }
+    public String getDateTime() { return dateTime; }
+    public BigDecimal getNum1() { return num1; }
+    public BigDecimal getNum2() { return num2; }
+    public BigDecimal getRoundedResult() { return roundedResult; }
+    public String getCalculationResult() { return calculationResult; }
+    public String getMd5Hash() { return md5Hash; }
 
     @Override
     public String toString() {

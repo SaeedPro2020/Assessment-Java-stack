@@ -5,7 +5,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class JsonFileWriter {
-    public static void writeToJsonFile(String filePath, Container container) {
+    public static void writeToJsonFile(Container container, String filePath) {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
             objectMapper.writeValue(new File(filePath), container);

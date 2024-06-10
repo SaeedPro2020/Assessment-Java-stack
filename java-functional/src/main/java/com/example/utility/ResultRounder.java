@@ -5,6 +5,6 @@ import java.math.RoundingMode;
 
 public class ResultRounder {
     public static BigDecimal roundResult(BigDecimal result) {
-        return result.setScale(2, RoundingMode.UP);
+        return result.setScale(2, RoundingMode.HALF_UP);
     }
 }
