@@ -1,3 +1,4 @@
+com/example/utility/DataGeneratorUtils.class
 com/example/utility/DivisionCalculator.class
 com/example/utility/MD5HashGenerator.class
 com/example/utility/JsonFileWriter.class
