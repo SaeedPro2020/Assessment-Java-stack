@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/22.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/saeed_farkhondeh/Desktop/AssignmentCode/Assessment-Java-stack/java-functional/target/surefire/surefirebooter-20240611122443314_3.jar /Users/saeed_farkhondeh/Desktop/AssignmentCode/Assessment-Java-stack/java-functional/target/surefire 2024-06-11T12-24-43_279-jvmRun1 surefire-20240611122443314_1tmp surefire_0-20240611122443314_2tmp"/>
+    <property name="sun.java.command" value="/Users/saeed_farkhondeh/Desktop/AssignmentCode/Assessment-Java-stack/java-functional/target/surefire/surefirebooter-20240612215108360_3.jar /Users/saeed_farkhondeh/Desktop/AssignmentCode/Assessment-Java-stack/java-functional/target/surefire 2024-06-12T21-51-08_322-jvmRun1 surefire-20240612215108360_1tmp surefire_0-20240612215108360_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/saeed_farkhondeh/Desktop/AssignmentCode/Assessment-Java-stack/java-functional/target/test-classes:/Users/saeed_farkhondeh/Desktop/AssignmentCode/Assessment-Java-stack/java-functional/target/classes:/Users/saeed_farkhondeh/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/Users/saeed_farkhondeh/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.1/jackson-databind-2.14.1.jar:/Users/saeed_farkhondeh/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.1/jackson-annotations-2.14.1.jar:/Users/saeed_farkhondeh/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.1/jackson-core-2.14.1.jar:"/>
@@ -29,7 +29,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/saeed_farkhondeh/Desktop/AssignmentCode/Assessment-Java-stack/java-functional/target/surefire/surefirebooter-20240611122443314_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/saeed_farkhondeh/Desktop/AssignmentCode/Assessment-Java-stack/java-functional/target/surefire/surefirebooter-20240612215108360_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="22.0.1"/>
