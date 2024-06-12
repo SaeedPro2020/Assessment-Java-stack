@@ -23,7 +23,7 @@ pipeline {
         stage('Run') {
             steps {
                 // Run the application using Maven
-                sh 'mvn spring-boot:run'
+                sh 'mvn compile exec:java -Dexec.mainClass="com.example.Main"'
             }
         }
     }
